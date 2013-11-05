@@ -20,9 +20,8 @@
     "viewport">
     <link rel="icon" type="image/gif" href="http://ydn.wpengine.netdna-cdn.com/wp-content/themes/yaledailynews/ydn-logo.gif"><!-- CSS
   ================================================== -->
-    <link href="stylesheets/base.css" rel="stylesheet">
-    <link href="stylesheets/skeleton.css" rel="stylesheet">
-    <link href="stylesheets/layout.css" rel="stylesheet">
+    <link href="stylesheets/foundation-4.3.2/css/normalize.css" rel="stylesheet">
+    <link href="stylesheets/foundation-4.3.2/css/foundation.css" rel="stylesheet">
     <link href="stylesheets/custom.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <!--[if lt IE 9]>
@@ -48,51 +47,58 @@
     ================================================== -->
     <!-- Delete everything in this .container and get started on your own site! -->
 
-    <div class="container">
-
+    <div class="container" id="ydnlogo">
         <div class="row" id="ydnlogo">
-        	</br>
-        	<a href="http://yaledailynews.com">
-        		<img id="logoimg" src="ydnlogogrey.png"/>
-        	</a>
+            <a href="http://yaledailynews.com">
+                <img id="logoimg" src="ydnlogogrey.png"/>
+            </a>
         </div>
+    </div>
 
+    <div class="container" id="maintitle">
         <div class="row" id="maintitle">
             <h1>New Haven Mayoral Elections 2013</h1>
         </div>
+    </div>
 
+   <!--  <div class="container" id="subtitle">
         <div class="row" id="subtitle">
-            <div class="nine columns" id="green">
+            <div class="large-7 columns" id="green">
                 63%
             </div>
 
-            <div class="seven columns" id="blue">
+            <div class="large-5 columns" id="blue">
                 37%
             </div>
         </div>
-        <hr>
-
+    </div>
+ -->
+    <div class="container">
         <div class="row" id="main">
-            <div class="four columns" id="tumblrfeed">
+            <div class="large-3 columns" id="tumblrfeed">
                 <div class="row" id="elicker-intro">
                     <h3 class="centered">Justin Elicker</h3>
+                    <img src="https://scontent-a-iad.xx.fbcdn.net/hphotos-ash2/525625_4630999610007_604504471_n.jpg" alt="Smiley face">
+                    <div class="cand-desc">
+                    </div>
                 </div>
 
-                <div class="row" id="map-preview">
-                    <h3 class="centered">Map [Preview]</h3>
-                </div>
+                <div class="row"  id="harp-intro">
+                    <h3 class="centered">Toni Harp</h3>
+                    <img src="https://scontent-b-iad.xx.fbcdn.net/hphotos-frc3/398345_2773939547461_1213206792_n.jpg" alt="Smiley face">
+                    <div class="cand-desc">
+                    </div>
+                </div> 
             </div>
 
-            <div class="eight columns" id="tumblrfeed">
+            <div class="large-6 columns" id="tumblrfeed">
                 <h3 class="centered">Latest Stories</h3>
 
                 <iframe src='storyfeed.html' class='tumblframe' id = 'leftframe' allowtransparency = 'false' styles = 'border:none;'></iframe>
             </div>
 
-            <div class="four columns">
-                <div class="row"  id="harp-intro">
-                    <h3>Toni Harp</h3>
-                </div>  
+            <div class="large-3 columns">
+                 
                 <div class="row">
                     <h3>#Yale23</h3><a class="twitter-timeline" data-dnt="true"
                     data-widget-id="388584592354992128" href=

@@ -35,6 +35,10 @@ function checkdiff(data) {
 
 setInterval(lookforchanges, 30000);
 
+//sets the size for the election color bars in the header
+function setbarsizes(){
+    
+}
 
 
 
@@ -48,3 +52,4 @@ setInterval(lookforchanges, 30000);
         fjs.parentNode.insertBefore(js, fjs);
     }
 }(document, "script", "twitter-wjs");
+

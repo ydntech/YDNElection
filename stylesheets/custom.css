@@ -1,5 +1,8 @@
 .container 									{ width:100%; }
-.row                                        { margin-bottom: 0px; }
+.row {
+		margin-bottom: 0px; 
+		max-width: 80.5em;
+}
 
 h1, h2, h3, h4, h5, h6 {
 		color: #fff;
