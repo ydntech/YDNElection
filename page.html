@@ -1,0 +1,36 @@
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://rawgithub.com/padolsey/jquery.fn/master/cross-domain-ajax/jquery.xdomainajax.js"></script>
+<style>
+html, body, div, iframe { margin:0; padding:0; height:100%; }
+iframe { position:fixed; display:block; width:100%; border:none; }
+</style>
+<script>
+
+var tlog = "";
+
+function lookforchanges()
+{
+$.get( "http://xcampus.tumblr.com/js", checkdiff);
+}
+
+function checkdiff(data)
+{
+if (data) {
+ if (data.responseText != tlog){
+ tlog = data.responseText;
+ document.getElementById("leftframe").contentDocument.location.reload(true);
+// $( ".tumblframe" ).remove();
+// $("body").append("<iframe src='http://ydntech.github.io/YDNInauguration/storyfeed.html' class='tumblframe'></iframe>");
+ }
+}
+}
+
+setInterval(lookforchanges, 30000);
+
+</script>
+</head>
+
+<body>
+<iframe src='http://ydntech.github.io/YDNInauguration/storyfeed.html' class='tumblframe' id = 'leftframe'></iframe>
+</body>

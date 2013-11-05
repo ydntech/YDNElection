@@ -1,0 +1,29 @@
+body{
+	background:#fff;
+	font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+ol{
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+ol.tumblr_posts{
+	list-style:none;
+}	
+
+.tumblr_post{
+	margin-top:20px;
+	border-bottom:1px solid rgb(232,232,232);
+}
+
+.tumblr_post .tumblr_title{
+	font-weight:bold;
+	font-size:25px;
+}
+
+.tumblr_video_post, .tumblr_photo_post{
+	text-align: center;
+
+}
