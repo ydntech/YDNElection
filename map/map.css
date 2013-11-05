@@ -1,0 +1,38 @@
+.mapsize {
+	width: 1142px;
+	height: 1200px;
+}
+#map {
+}
+#mapclick {
+	position: absolute;
+}
+#imgward {
+	float: left;
+}
+#map .clicked {
+	width: 32px;
+	height: 32px;
+	font-size: 18px;
+	font-family: sans-serif;
+	text-align: center;
+	background-color: #ff0009;
+	position: absolute;
+	z-index: 10;
+	border-radius: 4px;
+	opacity: .8;
+	cursor: default;
+}
+#map .clicked:hover {
+	opacity: 1;
+}
+#map .poll {
+	width: 128px;
+	height: 128px;
+	position: absolute;
+}
+	#map .poll .jqplot-data-label {
+		font-family: sans-serif;
+		color: #ffffff;
+		font-size: 10px;
+	}
