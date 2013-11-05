@@ -19,7 +19,7 @@ function setHeight(elem1, elem2) {
 var tlog = "";
 
 function lookforchanges() {
-    $.get("http://ydnelections.tumblr.com/js?num=1000", checkdiff);
+    $.get("http://nhelection13.tumblr.com/js?num=1000", checkdiff);
 }
 
 function checkdiff(data) {
