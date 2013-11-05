@@ -15,7 +15,7 @@ $.getJSON("http://cors.io/spreadsheets.google.com/feeds/list/0AlodOQ6KsieFdDNBX0
 
 		var wardNum = i+1;
 		var wardID = "#map-ward" + wardNum;
-		if (wardNum > 0) {
+		if (wardNum > 0 && data.feed.entry[i]['gsx$active']['$t'] == "yes") {
 			//var offset = $("#mapclick").offset();
 			var relX = parseInt(data.feed.entry[i]['gsx$xcord']['$t']);
 			var relY = parseInt(data.feed.entry[i]['gsx$ycord']['$t']);
@@ -41,7 +41,7 @@ $.getJSON("http://cors.io/spreadsheets.google.com/feeds/list/0AlodOQ6KsieFdDNBX0
 				        renderer: jQuery.jqplot.PieRenderer, 
 				        rendererOptions: {
 				          	showDataLabels: true,
-				          	seriesColors: ["#ff0000", "#0000ff"],
+				          	seriesColors: ["#279C1A", "#1B407A"],
 				          	diameter: 60,
 				          	padding: 10,
 				          	startAngle: 90,

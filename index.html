@@ -18,16 +18,20 @@
   ================================================== -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name=
     "viewport">
-    <link rel="icon" type="image/gif" href="http://ydn.wpengine.netdna-cdn.com/wp-content/themes/yaledailynews/ydn-logo.gif"><!-- CSS
+    <link href=
+    "http://ydn.wpengine.netdna-cdn.com/wp-content/themes/yaledailynews/ydn-logo.gif"
+    rel="icon" type="image/gif"><!-- CSS
   ================================================== -->
-    <link href="stylesheets/foundation-4.3.2/css/normalize.css" rel="stylesheet">
-    <link href="stylesheets/foundation-4.3.2/css/foundation.css" rel="stylesheet">
-    <link href="stylesheets/custom.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
-    <!--[if lt IE 9]>
+    <link href="stylesheets/foundation-4.3.2/css/normalize.css" rel=
+    "stylesheet">
+    <link href="stylesheets/foundation-4.3.2/css/foundation.css" rel=
+    "stylesheet">
+    <link href=
+    'http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,500italic,400italic,500,300italic,300'
+    rel='stylesheet' type='text/css'>
+    <link href="stylesheets/custom.css" rel="stylesheet"><!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
     <!-- Favicons
     ================================================== -->
     <link href="images/favicon.ico" rel="shortcut icon">
@@ -38,8 +42,10 @@
     sizes="114x114">
     <script src=
     "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="https://rawgithub.com/padolsey/jquery.fn/master/cross-domain-ajax/jquery.xdomainajax.js"></script>
-	<script src="scripts/script.js"></script>
+    <script src=
+    "https://rawgithub.com/padolsey/jquery.fn/master/cross-domain-ajax/jquery.xdomainajax.js"></script>
+    <script src="stylesheets/foundation-4.3.2/js/foundation.min.js"></script>
+    <script src="scripts/script.js"></script>
 </head>
 
 <body>
@@ -49,19 +55,52 @@
 
     <div class="container" id="ydnlogo">
         <div class="row" id="ydnlogo">
-            <a href="http://yaledailynews.com">
-                <img id="logoimg" src="ydnlogogrey.png"/>
-            </a>
+            <a href="http://yaledailynews.com"><img id="logoimg" src=
+            "ydnlogogrey.png"></a>
         </div>
     </div>
 
     <div class="container" id="maintitle">
-        <div class="row" id="maintitle">
-            <h1>New Haven Mayoral Elections 2013</h1>
+        <div class="row" id="maintitle" style="display: table;">
+            <h1 style="max-width: 700px; display: table-cell; vertical-align: center;">New Haven Mayoral Elections 2013</h1>
+            <a href="map/mapso.html" class="button-base size" style= "-webkit-background-clip: border-box;
+-webkit-background-origin: padding-box;
+-webkit-background-size: auto;
+-webkit-font-smoothing: antialiased;
+background-attachment: scroll;
+background-clip: border-box;
+background-color: rgba(0, 0, 0, 0);
+background-image: none;
+background-origin: padding-box;
+background-size: auto;
+box-sizing: border-box;
+color: rgb(43, 166, 203);
+cursor: pointer;
+direction: ltr;
+display: inline-block;
+font-family: 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+height: 46px;
+line-height: normal;
+margin-bottom: 20px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+padding-left: 24px;
+padding-right: 24px;
+position: relative;
+text-align: center;
+text-decoration: none;
+width: 260px;
+vertical-align: center;
+display: table-cell;
+margin-left: 50px;">Go to Election Map ></a>
         </div>
     </div>
 
-   <!--  <div class="container" id="subtitle">
+    <!--  <div class="container" id="subtitle">
         <div class="row" id="subtitle">
             <div class="large-7 columns" id="green">
                 63%
@@ -72,39 +111,62 @@
             </div>
         </div>
     </div>
- -->
-    <div class="container">
-        <div class="row" id="main">
-            <div class="large-3 columns" id="tumblrfeed">
-                <div class="row" id="elicker-intro">
-                    <h3 class="centered">Justin Elicker</h3>
-                    <img src="https://scontent-a-iad.xx.fbcdn.net/hphotos-ash2/525625_4630999610007_604504471_n.jpg" alt="Smiley face">
-                    <div class="cand-desc">
-                    </div>
-                </div>
+    -->
 
-                <div class="row"  id="harp-intro">
-                    <h3 class="centered">Toni Harp</h3>
-                    <img src="https://scontent-b-iad.xx.fbcdn.net/hphotos-frc3/398345_2773939547461_1213206792_n.jpg" alt="Smiley face">
-                    <div class="cand-desc">
-                    </div>
-                </div> 
+    <div class="container" id="maincontainer">
+        <div class="row" id="main">
+            <div class="large-3 columns" id="candidates">
+                <h3 class="centered">The Candidates</h3>
+                <h6 class="centered">(click on the each candidate for more information)</h>
+                <div class="section-container" data-section="accordion">
+                    <section class="">
+                        <div class="row" data-section-title="" id=
+                        "elicker-intro" style="display: inline;">
+                            <a href="#">
+                            <h4 class="centered">Justin Elicker ></h3><img alt=
+                            "Justin Elicker" src="Elicker.jpg">
+
+                            </a>
+                        </div>
+
+                        <div class="content" data-section-content="">
+                            <p>Content of section 1.</p>
+                        </div>
+                    </section>
+
+                    <section class="">
+                        <div class="row" data-section-title="" id=
+                        "elicker-intro" style="display: inline;">
+                            <a href="#">
+                            <h4 class="centered">Toni Harp ></h3><img alt=
+                            "Toni Harp" src="Toni.jpg">
+
+                            </a>
+                        </div>
+
+                        <div class="content" data-section-content="">
+                            <p>Content of section 2.</p>
+                        </div>
+                    </section>
+                </div>
             </div>
 
             <div class="large-6 columns" id="tumblrfeed">
-                <h3 class="centered">Latest Stories</h3>
-
-                <iframe src='storyfeed.html' class='tumblframe' id = 'leftframe' allowtransparency = 'false' styles = 'border:none;'></iframe>
+                <h3 class="centered">Latest Stories</h3><iframe class=
+                'tumblframe' id='leftframe' name="leftframe" src=
+                'storyfeed.html' style="height: 1050px;"></iframe>
             </div>
 
-            <div class="large-3 columns">
-                 
+            <div class="large-3 columns" id="twitterfeed">
                 <div class="row">
-                    <h3>#Yale23</h3><a class="twitter-timeline" data-dnt="true"
+                    <h3 class="centered">Twitter</h3><a class="twitter-timeline" data-dnt="true"
                     data-widget-id="388584592354992128" href=
                     "https://twitter.com/yaledailynews">Tweets by
-                    @yaledailynews</a> 
-                </div>  
+                    @yaledailynews</a>
+                    <style>#twitter-widget-0 {
+                        height: 1050px;
+                        }</style>
+                </div>
             </div>
         </div><!-- container -->
 
@@ -114,10 +176,15 @@
             <div class="pull-right" id="footer">
                 © 2013 Yale Daily News • <a href=
                 "http://yaledailynews.com/rights-permissions/">All Rights
-                Reserved</a> • Created by Soham Sankaran &amp; Vincent Hu
+                Reserved</a> • Created by Soham Sankaran, Vincent Hu, Jason Kim, and Qingyang Chen.
             </div><!-- .site-info -->
         </footer><!-- End Document
 ================================================== -->
-    </div>
+    </div><script>
+document.write('<script src=stylesheets/foundation-4.3.2/js/vendor/'
+    + ('__proto__' in {} ? 'zepto' : 'jquery')
+    + '.js><\/script>');
+    $(document).foundation();
+    </script>
 </body>
 </html>

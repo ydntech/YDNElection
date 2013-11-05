@@ -16,7 +16,7 @@
 	font-size: 18px;
 	font-family: sans-serif;
 	text-align: center;
-	background-color: #ff0009;
+	background-color: #D3DBE3;
 	position: absolute;
 	z-index: 10;
 	border-radius: 4px;
@@ -36,3 +36,7 @@
 		color: #ffffff;
 		font-size: 10px;
 	}
+	
+body {
+background-color: #333333;
+}
